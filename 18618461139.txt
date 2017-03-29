@@ -1,0 +1,55 @@
+感谢老师的分享，课程写的通俗易懂幽默，轻轻松松的学会了git的使用。
+
+
+自己做了点笔记：
+
+
+$ git config --global user.name "Your Name"  #配置git用户名
+$ git config --global user.email "email@example.com" #配置git邮箱地址
+$ ssh-keygen -t rsa -C "youremail@example.com" #创建SSH key
+$ git init  #初始化仓库
+$ git add <file> #添加文件到缓存区
+$ git commit -m 'your message' #将缓存区的文件提交到仓库
+$ git status #查看工作区的状态
+$ git diff #查看工作区修改的内容
+$ git log #查看提交历史
+$ git log --pretty=oneline #查看提交历史（简要内容）
+$ git log --graph #查看分支合并图
+$ git reflog #查看命令历史
+$ git reset --hard commit_id #回退到指定版本 HEAD指当前版本 HEAD^指上一个版本
+$ git checkout -- <file> #丢弃工作区的修改
+$ git remote add origin git@github.com:18618461139/test.git #本地仓库关联远程仓库
+$ git push -u origin master #关联后，第一次推送master分支上的所有内容
+$ git push origin master #推送本地仓库内容到远程仓库
+$ git clone git@github.com:18618461139/test.git #克隆远程仓库到本地
+$ git branch #查看分支
+$ git branch <branch-name> #创建分支
+$ git checkout <branch-name> #切换分支
+$ git checkout -b <branch-name> #创建并切换分支
+$ git merge <branch-name> #合并分支到当前分支
+$ git merge --no-ff -m 'your message' <branch-name> #合并到当前分支，不使用Fast forward
+$ git branch -d <branch-name> #删除分支
+$ git branch -D <branch-name> #强制删除分支
+$ git stash #贮存工作区
+$ git stash list #查看贮存列表
+$ git stash apply #恢复贮存内容
+$ git stash apply stash@{0} #恢复某个贮存内容
+$ git stash drop #删除贮存内容
+$ git stash pop # 恢复贮存内容后删除贮存内容
+$ git remote -v #查看远程仓库信息
+$ git push origin <branch-name> #推送本地分支到远程仓库
+$ git checkout -b <branch-name> origin/<branch-name> #在本地创建和远程分支对应的分支
+$ git branch --set-upstream <branch-name> origin/<branch-name> #本地分支和远程分支关联
+$ git pull #拉取远程仓库内容，如果有冲突，要先处理冲突
+$ git tag  #查看所有的标签
+$ git tag <tag-name> #创建新标签，默认在HEAD创建
+$ git tag <tag-name> <commit-id> #在指定commit_id下创建标签
+$ git show <tag-name> #查看标签信息
+$ git tag -a <tag-name> -m 'your message' #指定标签信息
+$ git tag -s <tag-name> -m 'your message' #PGP签名标签
+$ git push origin <tag-name> #推送一个本地标签到远程
+$ git push origin --tags #推送全部未推送过的本地标签到远程
+$ git tag -d <tag-name> #删除一个本地标签
+$ git push origin :refs/tags/<tag-name> #删除一个远程标签
+
+
